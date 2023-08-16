@@ -1,0 +1,89 @@
+.register {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+            to bottom, 
+            rgba(0,0,0,0) 0%, 
+            rgba(0,0,0,1) 100%
+        ), 
+        url("https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs-tinysrgb&dpr=2&w=500");
+    background-size: cover;
+    position: relative;
+
+    .top {
+        .wrapper {
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                height: 40px;
+            }
+
+            .loginButton {
+                background-color: red;
+                border: none;
+                color: white;
+                border-radius: 5px;
+                padding: 5px 15px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex; // defaults to flexing row-wise
+        flex-direction: column;
+        align-items: center; // defines how the flex items are aligned along the cross axis
+        justify-content: center; // defines how the flex items are aligned along the main axis
+        color: white;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            margin: 20px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .input {
+            width: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            height: 50px;
+            border-radius: 5px;
+
+            input {
+                flex: 9; // input elements should take up 9 parts of available space out of a total of 12
+                height: 100%;
+                border: none;
+                padding: 0 10px;
+            }
+
+            .registerButton {
+                flex: 3; // registerButton class elements should take up 3 parts of available space out of a total of 12
+                height: 100%;
+                background-color: red;
+                border: none;
+                color: white;
+                font-size: 22px;
+                cursor: pointer;
+            }
+        }
+    }
+}
